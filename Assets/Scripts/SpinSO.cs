@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using Enums;
 using UnityEngine;
@@ -12,10 +11,12 @@ namespace  ScriptableObjectScripts
         [SerializeField] private ZoneTypes zoneType;
         [SerializeField] private Sprite spinRouletteSprite;
         [SerializeField] private Sprite spinIndicatorSprite;
+        [SerializeField] private int zoneIndex;
 
         public ZoneTypes ZoneType => zoneType;
         public Sprite SpinRouletteSprite => spinRouletteSprite;
         public Sprite SpinIndicatorSprite => spinIndicatorSprite;
+        public int ZoneIndex => zoneIndex;
     }
 
     [Serializable]

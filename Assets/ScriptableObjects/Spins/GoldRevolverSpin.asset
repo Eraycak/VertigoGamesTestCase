@@ -18,6 +18,7 @@ MonoBehaviour:
       type: 3}
     spinIndicatorSprite: {fileID: 21300000, guid: 25a1b4f55cf57c3459e2dff7117cf89d,
       type: 3}
+    zoneIndex: 30
   spinItemProperties:
   - itemSO: {fileID: 11400000, guid: 22df5e0f884c1554f835f9b51c8edbe3, type: 2}
   - itemSO: {fileID: 11400000, guid: 71753c8577bc72a43bc30184e961b2f3, type: 2}

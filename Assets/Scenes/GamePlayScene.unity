@@ -3295,6 +3295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831431836}
+  - component: {fileID: 831431837}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -3324,6 +3325,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &831431837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831431835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 508318772}
+  revolveRewardItemText: {fileID: 1451971493}
 --- !u!1 &833319688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3910,6 +3925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 937847250}
+  - component: {fileID: 937847251}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -3939,6 +3955,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &937847251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937847249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 872559046}
+  revolveRewardItemText: {fileID: 1930609164}
 --- !u!1 &954391564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,6 +3979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954391565}
   - component: {fileID: 954391566}
+  - component: {fileID: 954391567}
   m_Layer: 5
   m_Name: Revolver_Panel
   m_TagString: Untagged
@@ -3985,6 +4016,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954391564}
   m_CullTransparentMesh: 1
+--- !u!114 &954391567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954391564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d64dc9cdcc1ff48aecd8175af2246a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortRandomly: 1
+  spinSOs:
+  - {fileID: 11400000, guid: 93b8d2804597ae7438dacf4b0f781175, type: 2}
+  - {fileID: 11400000, guid: 5ad775797a14b444aa1dd0b07afced32, type: 2}
+  - {fileID: 11400000, guid: e76c50b6aa2f5f04fb30dfb5d744e676, type: 2}
+  revolverSpinRewardPoints:
+  - {fileID: 374825786}
+  - {fileID: 2081557672}
+  - {fileID: 984547299}
+  - {fileID: 1305572468}
+  - {fileID: 125908897}
+  - {fileID: 1219432211}
+  - {fileID: 1297778908}
+  - {fileID: 26680805}
+  revolverSpinBaseImage: {fileID: 1068930072}
+  revolverSpinIndicatorImage: {fileID: 2067021792}
+  revolverSpinRewardItemsSO:
+  - {fileID: 11400000, guid: 15c7252bfb13a7e42a72727c02138d11, type: 2}
+  - {fileID: 11400000, guid: 22df5e0f884c1554f835f9b51c8edbe3, type: 2}
+  - {fileID: 11400000, guid: 71753c8577bc72a43bc30184e961b2f3, type: 2}
+  - {fileID: 11400000, guid: 8f9866a9ce0c0e74588aa966ce40cbf6, type: 2}
+  - {fileID: 11400000, guid: 0e498a25640545c46bc8fabe3230769c, type: 2}
+  - {fileID: 11400000, guid: 44bd0384da2f28a4081ffbb72d0e1917, type: 2}
+  - {fileID: 11400000, guid: cdc56740daa66c84ba33f81421450ff8, type: 2}
+  - {fileID: 11400000, guid: 4b87397e4168bd04c9d593d8db2c0f0d, type: 2}
+  - {fileID: 11400000, guid: 47b2f2e6e81780d4cbc727c9a111dd8c, type: 2}
+  - {fileID: 11400000, guid: 3b6c4f356e7cdb04982e1f9fc90fbe17, type: 2}
+  - {fileID: 11400000, guid: 339fc06d7fcda4c4c80e3cdbbcf4e9e7, type: 2}
+  - {fileID: 11400000, guid: 7fa08d7f4f3eab2419893fda3f86326a, type: 2}
+  - {fileID: 11400000, guid: 2c6bdd7833782674cb92ec68d9450f54, type: 2}
+  - {fileID: 11400000, guid: 87cccb779b7f68041a67abb554a1043c, type: 2}
+  - {fileID: 11400000, guid: 9ee13a244ce611a439ee949f889736af, type: 2}
+  - {fileID: 11400000, guid: 0a8a8de1ed8821f4191a66001c62e14a, type: 2}
+  - {fileID: 11400000, guid: 47c2f1d9c72742a40a0d2aaf1a8e4d65, type: 2}
+  - {fileID: 11400000, guid: 1a874f7d81469ce4788ae763f350829c, type: 2}
+  - {fileID: 11400000, guid: c8081b74efc185745bd6c446019b631c, type: 2}
+  - {fileID: 11400000, guid: 53bd202c8fe03694087614b1014f570f, type: 2}
+  - {fileID: 11400000, guid: 86bd14c1d83fcad49abeddfaf6406f02, type: 2}
+  - {fileID: 11400000, guid: db5ca3a18a833fc4fa0d04a816fcec5c, type: 2}
+  - {fileID: 11400000, guid: 3b9ac9e368062114e829a40f50334f1f, type: 2}
+  - {fileID: 11400000, guid: 43fb3280ee377d843b4c5a3d77eef224, type: 2}
+  - {fileID: 11400000, guid: 7fb1d364f9d24d444a9ea1819a5b28b8, type: 2}
+  - {fileID: 11400000, guid: 24febe85055044146a97bc978ea81077, type: 2}
+  - {fileID: 11400000, guid: 20f5a836b867c3f4e8f1fad6d414679f, type: 2}
+  - {fileID: 11400000, guid: a8c7488f99699034187e6bb37d33f4a2, type: 2}
+  - {fileID: 11400000, guid: c77885d98876f15419de5d6af265a5b4, type: 2}
+  - {fileID: 11400000, guid: 47d6e87b505758c49b5ca1e4368619e5, type: 2}
+  - {fileID: 11400000, guid: 38641b281dac3e14ba3960be0fa4e263, type: 2}
+  - {fileID: 11400000, guid: b6dc742578341fa49899d5d0acf7c57f, type: 2}
+  - {fileID: 11400000, guid: 90c264a6a00f0fc40a882c98715a7506, type: 2}
+  - {fileID: 11400000, guid: 8e4a7755a98d373408d49686776c25a3, type: 2}
+  - {fileID: 11400000, guid: 9edc37bc85e4cf048bce0c261fa177c2, type: 2}
+  - {fileID: 11400000, guid: 0e7f8b11fa1f9074790d19e55538d2fb, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5013,6 +5109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1113932202}
+  - component: {fileID: 1113932203}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -5042,6 +5139,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1113932203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113932201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 23550381}
+  revolveRewardItemText: {fileID: 1581191321}
 --- !u!1 &1138980760
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,6 +5162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138980761}
+  - component: {fileID: 1138980762}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -5080,6 +5192,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1138980762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138980760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 1204758099}
+  revolveRewardItemText: {fileID: 1650894794}
 --- !u!1 &1143396480
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,6 +6081,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370118573}
+  - component: {fileID: 1370118574}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -5984,6 +6111,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1370118574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370118572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 2072484360}
+  revolveRewardItemText: {fileID: 978332385}
 --- !u!1 &1380799865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5993,6 +6134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1380799866}
+  - component: {fileID: 1380799867}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -6022,6 +6164,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1380799867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380799865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 252990548}
+  revolveRewardItemText: {fileID: 2133873830}
 --- !u!1 &1382527154
 GameObject:
   m_ObjectHideFlags: 0
@@ -8410,6 +8566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956365202}
+  - component: {fileID: 1956365203}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -8439,6 +8596,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1956365203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956365201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 471577012}
+  revolveRewardItemText: {fileID: 663359211}
 --- !u!1 &2012615516
 GameObject:
   m_ObjectHideFlags: 0
@@ -8896,6 +9067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2082107135}
+  - component: {fileID: 2082107136}
   m_Layer: 5
   m_Name: Revolver_Reward_Item
   m_TagString: Untagged
@@ -8925,6 +9097,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2082107136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082107134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverewardItemImage: {fileID: 605913684}
+  revolveRewardItemText: {fileID: 442417896}
 --- !u!1 &2126436014
 GameObject:
   m_ObjectHideFlags: 0
