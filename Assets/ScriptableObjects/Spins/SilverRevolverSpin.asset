@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acb7a48ef0632e4da539bd6f7296120, type: 3}
+  m_Name: SilverRevolverSpin
+  m_EditorClassIdentifier: 
+  spinProperties:
+    zoneType: 1
+    spinRouletteSprite: {fileID: 21300000, guid: 97f20aea74f687146a8ada5ea8c9aa34,
+      type: 3}
+    spinIndicatorSprite: {fileID: 21300000, guid: 41e5e9d3a80511841aa64532407ef6b5,
+      type: 3}
+  spinItemProperties:
+  - itemSO: {fileID: 11400000, guid: 22df5e0f884c1554f835f9b51c8edbe3, type: 2}
+  - itemSO: {fileID: 11400000, guid: 71753c8577bc72a43bc30184e961b2f3, type: 2}
+  - itemSO: {fileID: 11400000, guid: 8f9866a9ce0c0e74588aa966ce40cbf6, type: 2}
+  - itemSO: {fileID: 11400000, guid: 0e498a25640545c46bc8fabe3230769c, type: 2}
+  - itemSO: {fileID: 11400000, guid: 44bd0384da2f28a4081ffbb72d0e1917, type: 2}
+  - itemSO: {fileID: 11400000, guid: cdc56740daa66c84ba33f81421450ff8, type: 2}
+  - itemSO: {fileID: 11400000, guid: 4b87397e4168bd04c9d593d8db2c0f0d, type: 2}
+  - itemSO: {fileID: 11400000, guid: 47b2f2e6e81780d4cbc727c9a111dd8c, type: 2}

@@ -49,8 +49,8 @@ namespace Enums
 
     public enum ZoneTypes
     {
-        BronzeSpin,
-        SilverSpin,
-        GoldSpin
+        BronzeRevolverSpin,
+        SilverRevolverSpin,
+        GoldRevolverSpin
     }
 }
