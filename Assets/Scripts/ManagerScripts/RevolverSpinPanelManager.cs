@@ -115,8 +115,8 @@ namespace ManagerScripts
                 int itemIndex =
                     sortRandomly
                         ? shuffledIndices[i]
-                        : i; //Random.Range(0, revolverSpinRewardItemsSO.Count) was changed to shuffledIndices[i] due to getting same number
-                revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[itemIndex]);
+                        : i;
+                revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[itemIndex], currentZoneIndex);
                 if (revolverSpinRewardItemsSO[itemIndex].itemProperties.ItemType.Equals(ItemTypes.DeathBomb))
                 {
                     isDeathBombAdded = true;
@@ -135,7 +135,7 @@ namespace ManagerScripts
                 if (isDeathBombAdded)
                 {
                     bombRevolverSpinRewardItem.Initialize(
-                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]]);
+                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]], currentZoneIndex);
                     return false;
                 }
             }
@@ -145,7 +145,7 @@ namespace ManagerScripts
                 {
                     int randomIndex = Random.Range(0, revolverSpinRewardPoints.Count);
                     var revolverSpinRewardItem = revolverSpinRewardPoints[randomIndex].GetComponent<RevolverRewardItem>();
-                    revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0]);
+                    revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0], currentZoneIndex);
                     return true;
                 }
             }
