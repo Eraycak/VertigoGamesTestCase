@@ -18,9 +18,10 @@ public class RevolverRewardItem : MonoBehaviour
 
     public void Initialize(ItemSO revolverRewardItemSO, int currentZoneIndex)
     {
+        revolverRewardItemSO.itemProperties.DefaultItemValue *= currentZoneIndex;
         RevolverRewardItemSO = revolverRewardItemSO;
         ItemProperties itemProperties = RevolverRewardItemSO.itemProperties;
         revolverRewardItemImage.sprite = itemProperties.ItemSprite;
-        revolverRewardItemText.text = itemProperties.ItemType.Equals(ItemTypes.DeathBomb) ? "Bomb" : "x" + itemProperties.DefaultItemValue * currentZoneIndex;
+        revolverRewardItemText.text = itemProperties.ItemType.Equals(ItemTypes.DeathBomb) ? "Bomb" : "x" + itemProperties.DefaultItemValue;
     }
 }

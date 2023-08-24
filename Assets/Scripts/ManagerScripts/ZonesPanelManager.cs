@@ -72,6 +72,7 @@ namespace ManagerScripts
                         currentZoneImage.sprite = currentZoneFrameSprite;
                     }
                     RevolverSpinPanelManager.Instance.OnZonePassed?.Invoke();
+                    RevolverSpinPanelManager.Instance.ScaleUp();
                     targetPositionX -= sizeOfCardZone;
                 };
         }

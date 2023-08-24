@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using Enums;
 using ScriptableObjectScripts;
 using UnityEngine;
@@ -48,6 +49,8 @@ namespace ManagerScripts
         [SerializeField] private List<ItemSO> revolverSpinRewardItemsSO;
         private SpinSO _spinSO;
         private int currentZoneIndex = 1;
+        private Vector3 revolverWheelScale = Vector3.one;
+        private Vector3 revolverWheelShrinkedScale = Vector3.zero;
 
         public int CurrentZoneIndex
         {
@@ -163,6 +166,16 @@ namespace ManagerScripts
             }
 
             return shuffledIndices;
+        }
+
+        internal void ScaleDown()
+        {
+            transform.DOScale(revolverWheelShrinkedScale, 1f);
+        }
+        
+        internal void ScaleUp()
+        {
+            transform.DOScale(revolverWheelScale, 1f);
         }
     }
 }
