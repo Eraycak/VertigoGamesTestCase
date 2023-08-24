@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GrenadeM26
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 15
+    itemType: 16
     itemSprite: {fileID: 21300000, guid: f1d235c9065164e49a895c74e8689072, type: 3}
     defaultItemValue: 1

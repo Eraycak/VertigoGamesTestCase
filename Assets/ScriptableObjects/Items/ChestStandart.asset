@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ChestStandart
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 7
+    itemType: 8
     itemSprite: {fileID: 21300000, guid: d47b7a815d2579442a7d08baa1ab159c, type: 3}
     defaultItemValue: 1

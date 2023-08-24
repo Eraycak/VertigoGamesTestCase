@@ -9,7 +9,7 @@ using Random = UnityEngine.Random;
 
 namespace ManagerScripts
 {
-    public struct SpinZoneProperties
+    internal struct SpinZoneProperties
     {
         [SerializeField] private ZoneTypes zoneType;
         [SerializeField] private int zoneIndex;
@@ -39,7 +39,6 @@ namespace ManagerScripts
                 return _instance;
             }
         }
-        
         
         [SerializeField] private bool sortRandomly = false;
         [SerializeField] internal List<SpinSO> spinSOs;
@@ -106,14 +105,10 @@ namespace ManagerScripts
 
         private void InitializeRevolverSpinnerItems()
         {
-            List<int> shuffledIndices = new List<int>();
-            if (sortRandomly)
-            {
-                shuffledIndices.AddRange(Enumerable.Range(0, revolverSpinRewardItemsSO.Count)
-                    .OrderBy(a => Guid.NewGuid()));
-            }
+            var shuffledIndices = CreateShuffledIndices();
 
             bool isDeathBombAdded = false;
+            var bombRevolverSpinRewardItem = revolverSpinRewardPoints[0].GetComponent<RevolverRewardItem>();
             for (int i = 0; i < revolverSpinRewardPoints.Count; i++)
             {
                 var revolverSpinRewardItem = revolverSpinRewardPoints[i].GetComponent<RevolverRewardItem>();
@@ -125,15 +120,49 @@ namespace ManagerScripts
                 if (revolverSpinRewardItemsSO[itemIndex].itemProperties.ItemType.Equals(ItemTypes.DeathBomb))
                 {
                     isDeathBombAdded = true;
+                    bombRevolverSpinRewardItem = revolverSpinRewardItem;
                 }
             }
 
-            if (!isDeathBombAdded)
+            isDeathBombAdded = CheckZoneAndBombConditions(isDeathBombAdded, shuffledIndices , bombRevolverSpinRewardItem);
+        }
+
+        private bool CheckZoneAndBombConditions(bool isDeathBombAdded, List<int> shuffledIndices , RevolverRewardItem bombRevolverSpinRewardItem)
+        {
+            if (currentZoneIndex % spinSOs[2].spinProperties.ZoneIndex == 0 ||
+                currentZoneIndex % spinSOs[1].spinProperties.ZoneIndex == 0)
             {
-                int randomIndex = Random.Range(0, revolverSpinRewardPoints.Count);
-                var revolverSpinRewardItem = revolverSpinRewardPoints[randomIndex].GetComponent<RevolverRewardItem>();
-                revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0]);
+                if (isDeathBombAdded)
+                {
+                    bombRevolverSpinRewardItem.Initialize(
+                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]]);
+                    return false;
+                }
             }
+            else
+            {
+                if (!isDeathBombAdded)
+                {
+                    int randomIndex = Random.Range(0, revolverSpinRewardPoints.Count);
+                    var revolverSpinRewardItem = revolverSpinRewardPoints[randomIndex].GetComponent<RevolverRewardItem>();
+                    revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0]);
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private List<int> CreateShuffledIndices()
+        {
+            List<int> shuffledIndices = new List<int>();
+            if (sortRandomly)
+            {
+                shuffledIndices.AddRange(Enumerable.Range(0, revolverSpinRewardItemsSO.Count)
+                    .OrderBy(a => Guid.NewGuid()));
+            }
+
+            return shuffledIndices;
         }
     }
 }

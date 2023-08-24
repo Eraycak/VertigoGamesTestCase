@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tier1Shotgun
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 23
+    itemType: 24
     itemSprite: {fileID: 21300000, guid: 4e5222e8eedc3774390c313e6a83a217, type: 3}
     defaultItemValue: 1

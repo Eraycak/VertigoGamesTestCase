@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ShotgunPoints
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 30
+    itemType: 31
     itemSprite: {fileID: 21300000, guid: 16dca4ad00b9bc34bb9ee29f6a0db595, type: 3}
     defaultItemValue: 1

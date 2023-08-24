@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ChestSilver
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 11
+    itemType: 12
     itemSprite: {fileID: 21300000, guid: 01e7881edb7d6f947842d5839b8497e5, type: 3}
     defaultItemValue: 1

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: AviatorGlassesEaster
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 0
+    itemType: 1
     itemSprite: {fileID: 21300000, guid: af76453f85ae0b94fb8010a908186eeb, type: 3}
     defaultItemValue: 1

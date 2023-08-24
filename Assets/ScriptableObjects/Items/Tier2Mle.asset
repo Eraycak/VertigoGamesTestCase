@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tier2Mle
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 24
+    itemType: 25
     itemSprite: {fileID: 21300000, guid: de84c82fcddc9fa4d8534c9c4dfe0d5e, type: 3}
     defaultItemValue: 1

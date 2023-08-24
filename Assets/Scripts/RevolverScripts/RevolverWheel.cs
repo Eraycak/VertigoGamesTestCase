@@ -36,13 +36,12 @@ public class RevolverWheel : MonoBehaviour
     private void SpinRevolver()
     {
         spinning = true;
-        //CollectedItemsPanelsManager.Instance.OnWheelSpinning(_spinning);
-        SetInteractibilityOfButton(!spinning);
+        SetInteractabilityOfButton(!spinning);
         activeSpinningSpeed = Random.Range(minSpeed, maxSpeed);
         elapsedTime = 0;
     }
 
-    internal void SetInteractibilityOfButton(bool interactable = true)
+    private void SetInteractabilityOfButton(bool interactable = true)
     {
         revolverSpinButton.interactable = interactable;
     }
@@ -57,10 +56,8 @@ public class RevolverWheel : MonoBehaviour
             if (activeSpinningSpeed <= 0.1f)
             {
                 spinning = false;
-                //CollectedItemsPanelsManager.Instance.OnWheelSpinning(_spinning);
-                SetInteractibilityOfButton(!spinning);
+                SetInteractabilityOfButton(!spinning);
                 elapsedTime = 0;
-                //float zRotation = revolverWheelTransform.eulerAngles.z;
                 float zRotation = revolverWheelTransform.eulerAngles.z;
                 float remainder = zRotation % angleForEachRewardPoint;
                 float roundedZRotation = zRotation - remainder + (remainder < angleForEachRewardPoint / 2 ? 0 : angleForEachRewardPoint);

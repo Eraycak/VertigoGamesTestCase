@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Molotov
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 21
+    itemType: 22
     itemSprite: {fileID: 21300000, guid: 57bc183c1126d7f4b892976139e990b2, type: 3}
     defaultItemValue: 1

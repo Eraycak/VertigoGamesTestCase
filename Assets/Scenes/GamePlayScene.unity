@@ -425,7 +425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3336d03f77b3904449f6c7ec1886dc47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d47b7a815d2579442a7d08baa1ab159c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3256f68ed102c347978f0e67fd6fb58, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6e2132f4b88847940b4f3149e2a97e17, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1763,7 +1763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: de84c82fcddc9fa4d8534c9c4dfe0d5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ef4ef8f7f09aaa43a059f10425587e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 16dca4ad00b9bc34bb9ee29f6a0db595, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d37450f5358cdef4ca71104516955a1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2098,7 +2098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a8e34362005221d47913be096b1fff99, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16dca4ad00b9bc34bb9ee29f6a0db595, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2584,8 +2584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 508318772}
-  revolveRewardItemText: {fileID: 1451971493}
+  revolverRewardItemImage: {fileID: 508318772}
+  revolverRewardItemText: {fileID: 1451971493}
 --- !u!1 &872559044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d37450f5358cdef4ca71104516955a1b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 140394d323393ea4f81856b944d71971, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2713,8 +2713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 872559046}
-  revolveRewardItemText: {fileID: 1930609164}
+  revolverRewardItemImage: {fileID: 872559046}
+  revolverRewardItemText: {fileID: 1930609164}
 --- !u!1 &954391564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,7 +2809,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87cccb779b7f68041a67abb554a1043c, type: 2}
   - {fileID: 11400000, guid: 9ee13a244ce611a439ee949f889736af, type: 2}
   - {fileID: 11400000, guid: 0a8a8de1ed8821f4191a66001c62e14a, type: 2}
-  - {fileID: 11400000, guid: 47c2f1d9c72742a40a0d2aaf1a8e4d65, type: 2}
   - {fileID: 11400000, guid: 1a874f7d81469ce4788ae763f350829c, type: 2}
   - {fileID: 11400000, guid: c8081b74efc185745bd6c446019b631c, type: 2}
   - {fileID: 11400000, guid: 53bd202c8fe03694087614b1014f570f, type: 2}
@@ -3531,8 +3530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 23550381}
-  revolveRewardItemText: {fileID: 1581191321}
+  revolverRewardItemImage: {fileID: 23550381}
+  revolverRewardItemText: {fileID: 1581191321}
 --- !u!1 &1138980760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,8 +3583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 1204758099}
-  revolveRewardItemText: {fileID: 1650894794}
+  revolverRewardItemImage: {fileID: 1204758099}
+  revolverRewardItemText: {fileID: 1650894794}
 --- !u!1 &1170915489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3779,7 +3778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1839bb214fa1b0d40b502a9bde730d1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af76453f85ae0b94fb8010a908186eeb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4292,8 +4291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 2072484360}
-  revolveRewardItemText: {fileID: 978332385}
+  revolverRewardItemImage: {fileID: 2072484360}
+  revolverRewardItemText: {fileID: 978332385}
 --- !u!1 &1380799865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4345,8 +4344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 252990548}
-  revolveRewardItemText: {fileID: 2133873830}
+  revolverRewardItemImage: {fileID: 252990548}
+  revolverRewardItemText: {fileID: 2133873830}
 --- !u!1 &1391509003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,7 +4478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x1
+  m_text: Bomb
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5721,7 +5720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bomb
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5984,8 +5983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 471577012}
-  revolveRewardItemText: {fileID: 663359211}
+  revolverRewardItemImage: {fileID: 471577012}
+  revolverRewardItemText: {fileID: 663359211}
 --- !u!1 &2012615516
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,7 +6433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 16c626efaa36dc94eb50561c25e65540, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01e7881edb7d6f947842d5839b8497e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6540,8 +6539,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ddd2687f9361459c1c7eaa4c86b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revolverewardItemImage: {fileID: 605913684}
-  revolveRewardItemText: {fileID: 442417896}
+  revolverRewardItemImage: {fileID: 605913684}
+  revolverRewardItemText: {fileID: 442417896}
 --- !u!1 &2133873828
 GameObject:
   m_ObjectHideFlags: 0

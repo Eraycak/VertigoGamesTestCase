@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: HealthShotRegenerator
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 18
+    itemType: 19
     itemSprite: {fileID: 21300000, guid: 4ef4ef8f7f09aaa43a059f10425587e9, type: 3}
     defaultItemValue: 1

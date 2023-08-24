@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Gold
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 14
+    itemType: 15
     itemSprite: {fileID: 21300000, guid: 1bf52d9f572d4b04c9e973a633fa3f7a, type: 3}
     defaultItemValue: 1

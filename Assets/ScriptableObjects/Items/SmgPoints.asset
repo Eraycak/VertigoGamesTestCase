@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SmgPoints
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 31
+    itemType: 32
     itemSprite: {fileID: 21300000, guid: 6e2132f4b88847940b4f3149e2a97e17, type: 3}
     defaultItemValue: 1

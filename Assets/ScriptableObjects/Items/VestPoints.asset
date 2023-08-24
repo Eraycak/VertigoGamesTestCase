@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: VestPoints
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 34
+    itemType: 35
     itemSprite: {fileID: 21300000, guid: 0deb4e694b56f874da3a113939708409, type: 3}
     defaultItemValue: 1

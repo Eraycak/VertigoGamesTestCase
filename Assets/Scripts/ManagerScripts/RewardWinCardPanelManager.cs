@@ -52,7 +52,6 @@ namespace ManagerScripts
 
         [SerializeField]
         internal string congratsYouWonPlayMoreToWınMore = "Congrats! You won!\nPlay more to wın more!!!";
-
         [SerializeField] internal string sorryYouLostTryAgainToWın = "Sorry! You lost!\nTry again to wın!!!";
         [SerializeField] internal string playMore = "Play More";
         [SerializeField] internal string tryAgain = "Try Again";
@@ -66,7 +65,7 @@ namespace ManagerScripts
             bool win = true, ItemTypes itemType = ItemTypes.None)
         {
             rewardWinCardPanelProperties.Image.sprite = rewardWinCardPanelSprite;
-            rewardWinCardPanelProperties.Text.text = rewardWinCardPanelText;
+            rewardWinCardPanelProperties.Text.text = win ? rewardWinCardPanelText : "Death Bomb";
             rewardWinCardPanelProperties.ResultText.text =
                 win ? congratsYouWonPlayMoreToWınMore : sorryYouLostTryAgainToWın;
             rewardWinCardPanelProperties.ResultButton.image.sprite = win

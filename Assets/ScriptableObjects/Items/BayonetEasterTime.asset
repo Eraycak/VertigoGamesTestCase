@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BayonetEasterTime
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 2
+    itemType: 3
     itemSprite: {fileID: 21300000, guid: a8e34362005221d47913be096b1fff99, type: 3}
     defaultItemValue: 1

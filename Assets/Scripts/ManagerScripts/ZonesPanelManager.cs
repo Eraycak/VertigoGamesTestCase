@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using DG.Tweening;
+using ScriptableObjectScripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,35 +40,38 @@ namespace ManagerScripts
         {
             targetPositionX = zonesContentTransform.localPosition.x - sizeOfCardZone;
             InstantiateCardZones(11);
-            zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().enabled = true;
-            zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().sprite = currentZoneFrameSprite;
+            Image currentZoneImage = zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>();
+            currentZoneImage.enabled = true;
+            currentZoneImage.sprite = currentZoneFrameSprite;
         }
 
         internal void MoveToNextZone()
         {
-            zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().enabled = false;
-            RevolverSpinPanelManager.Instance.CurrentZoneIndex++;
+            int currentZoneIndex = ++RevolverSpinPanelManager.Instance.CurrentZoneIndex;
+            zonesContentTransform.GetChild(currentZoneIndex - 2).GetComponent<Image>().enabled = false;
+            List<SpinSO> spinSOs = RevolverSpinPanelManager.Instance.spinSOs;
             zonesContentTransform.DOLocalMoveX(targetPositionX, 1f).onComplete +=
                 () =>
                 {
-                    zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().enabled = true;
-                    //zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().sprite = RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1 == RevolverSpinPanelManager.Instance.spinZoneProperties[0].ZoneIndex ? currentZoneFrameSprite : superZoneFrameSprite;
-                    if (RevolverSpinPanelManager.Instance.CurrentZoneIndex %
-                        RevolverSpinPanelManager.Instance.spinSOs[2].spinProperties.ZoneIndex == 0)
+                    Image currentZoneImage = zonesContentTransform
+                        .GetChild(currentZoneIndex - 1).GetComponent<Image>();
+                    currentZoneImage.enabled = true;
+                    if (currentZoneIndex %
+                        spinSOs[2].spinProperties.ZoneIndex == 0)
                     {
-                        zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().sprite = superZoneFrameSprite;
+                        currentZoneImage.sprite = superZoneFrameSprite;
                     }
-                    else if (RevolverSpinPanelManager.Instance.CurrentZoneIndex %
-                             RevolverSpinPanelManager.Instance.spinSOs[1].spinProperties.ZoneIndex == 0)
+                    else if (currentZoneIndex %
+                             spinSOs[1].spinProperties.ZoneIndex == 0)
                     {
-                        zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().sprite = superZoneFrameSprite;
+                        currentZoneImage.sprite = superZoneFrameSprite;
                         InstantiateCardZones(6);
                     }
                     else
                     {
-                        zonesContentTransform.GetChild(RevolverSpinPanelManager.Instance.CurrentZoneIndex - 1).GetComponent<Image>().sprite = currentZoneFrameSprite;
+                        currentZoneImage.sprite = currentZoneFrameSprite;
                     }
-                    RevolverSpinPanelManager.Instance.SetRevolverSpinProperties();
+                    RevolverSpinPanelManager.Instance.OnZonePassed?.Invoke();
                     targetPositionX -= sizeOfCardZone;
                 };
         }

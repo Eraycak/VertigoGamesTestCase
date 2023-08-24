@@ -62,7 +62,12 @@ namespace ManagerScripts
                     return;
                 }
             }
-            
+
+            SetNewCollectedItemProperties(prizeValue, prizeSprite, itemType);
+        }
+
+        private void SetNewCollectedItemProperties(string prizeValue, Sprite prizeSprite, ItemTypes itemType)
+        {
             Transform newPrize = Instantiate(prizePrefab, contentTransform).transform;
             newPrize.GetChild(0).GetComponent<TextMeshProUGUI>().text = prizeValue;
             newPrize.GetChild(1).GetComponent<Image>().sprite = prizeSprite;

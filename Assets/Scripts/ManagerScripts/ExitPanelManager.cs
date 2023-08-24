@@ -19,17 +19,26 @@ namespace ManagerScripts
 
         private void Awake()
         {
-            exitLeaveButton.onClick.RemoveAllListeners();
+            RemoveListeners();
+            AddListeners();
+        }
+
+        private void AddListeners()
+        {
             exitLeaveButton.onClick.AddListener(ExitLeaveButtonOnClick);
-            exitReturnButton.onClick.RemoveAllListeners();
             exitReturnButton.onClick.AddListener(ExitReturnButtonOnClick);
         }
 
         private void ExitLeaveButtonOnClick()
         {
+            RemoveListeners();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        private void RemoveListeners()
+        {
             exitLeaveButton.onClick.RemoveAllListeners();
             exitReturnButton.onClick.RemoveAllListeners();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         private void ExitReturnButtonOnClick()

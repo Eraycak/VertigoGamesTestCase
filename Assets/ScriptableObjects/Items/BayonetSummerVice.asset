@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BayonetSummerVice
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 3
+    itemType: 4
     itemSprite: {fileID: 21300000, guid: c7c3d55f17be3cb4fa98ab9ad8e6d584, type: 3}
     defaultItemValue: 1

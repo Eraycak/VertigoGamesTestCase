@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BaseballCapEaster
   m_EditorClassIdentifier: 
   itemProperties:
-    itemType: 4
+    itemType: 5
     itemSprite: {fileID: 21300000, guid: 36f8de90a51423943a844a739ffc48d1, type: 3}
     defaultItemValue: 1
