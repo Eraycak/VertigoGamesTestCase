@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using Enums;
 using ScriptableObjectScripts;
@@ -21,9 +19,15 @@ public class RevolverWheel : MonoBehaviour
     private float elapsedTime;
     private bool spinning = false;
     private float angleForEachRewardPoint;
-    
+
+    private void OnValidate()
+    {
+        revolverSpinButton ??= transform.parent.GetChild(2).GetComponent<Button>();
+    }
+
     private void Awake()
     {
+        revolverSpinButton.onClick.RemoveAllListeners();
         revolverSpinButton.onClick.AddListener(SpinRevolver);
         angleForEachRewardPoint = 360f / revolverRewardPointsNumber;
     }

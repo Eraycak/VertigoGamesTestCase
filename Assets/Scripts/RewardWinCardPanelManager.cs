@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -53,6 +51,11 @@ public class RewardWinCardPanelManager : MonoBehaviour
     [SerializeField] internal string playMore = "Play More";
     [SerializeField] internal string tryAgain = "Try Again";
 
+    private void OnValidate()
+    {
+        rewardWinCardPanelProperties.ResultButton ??= transform.GetChild(2).GetComponent<Button>();
+    }
+
     internal void SetRewardWinCardPanelProperties(Sprite rewardWinCardPanelSprite, string rewardWinCardPanelText, bool win = true)
     {
         rewardWinCardPanelProperties.Image.sprite = rewardWinCardPanelSprite;
@@ -61,18 +64,20 @@ public class RewardWinCardPanelManager : MonoBehaviour
             win ? congratsYouWonPlayMoreToWınMore : sorryYouLostTryAgainToWın;
         rewardWinCardPanelProperties.ResultButton.image.sprite = win ? rewardWinCardPanelProperties.RewardWinCardPanelResultButtonWinSprite : rewardWinCardPanelProperties.RewardWinCardPanelResultButtonLoseSprite;
         rewardWinCardPanelProperties.ResultButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = win ? playMore : tryAgain;
+        rewardWinCardPanelProperties.ResultButton.onClick.RemoveAllListeners();
         rewardWinCardPanelProperties.ResultButton.onClick.AddListener(() => ClosePanel(win));
     }
 
     private void ClosePanel(bool win = true)
     {
         if (win)
-        {            
+        {
+            CollectedItemsPanelManager.Instance.AddNewCollectedItem(rewardWinCardPanelProperties.Text.text, rewardWinCardPanelProperties.Image.sprite);
             gameObject.SetActive(false);
-            rewardWinCardPanelProperties.ResultButton.onClick.RemoveAllListeners();
         }
         else
         {
+            rewardWinCardPanelProperties.ResultButton.onClick.RemoveAllListeners();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
