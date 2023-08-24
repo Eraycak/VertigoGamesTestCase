@@ -80,11 +80,18 @@ public class RevolverSpinPanelManager : MonoBehaviour
 
     private void InitializeRevolverSpinnerItems()
     {
+        List<int> shuffledIndices = new List<int>();
+        if (sortRandomly)
+        {
+            shuffledIndices.AddRange(Enumerable.Range(0, revolverSpinRewardItemsSO.Count)
+                .OrderBy(a => Guid.NewGuid()));
+        }
+        
         bool isDeathBombAdded = false;
         for (int i = 0; i < revolverSpinRewardPoints.Count; i++)
         {
             var revolverSpinRewardItem = revolverSpinRewardPoints[i].GetComponent<RevolverRewardItem>();
-            int itemIndex = sortRandomly ? Random.Range(0, revolverSpinRewardItemsSO.Count) : i;
+            int itemIndex = sortRandomly ? shuffledIndices[i] : i; //Random.Range(0, revolverSpinRewardItemsSO.Count) was changed to shuffledIndices[i] due to getting same number
             revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[itemIndex]);
             if (revolverSpinRewardItemsSO[itemIndex].itemProperties.ItemType.Equals(ItemTypes.DeathBomb))
             {

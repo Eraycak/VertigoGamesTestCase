@@ -425,7 +425,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 746944b740debf3478ffb1debf30e1ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d37450f5358cdef4ca71104516955a1b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2040,7 +2040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ad56a1b270df96445a05d348572c2a92, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2560,7 +2560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1839bb214fa1b0d40b502a9bde730d1f, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2589,6 +2589,7 @@ GameObject:
   - component: {fileID: 538179385}
   - component: {fileID: 538179387}
   - component: {fileID: 538179386}
+  - component: {fileID: 538179388}
   m_Layer: 5
   m_Name: Reward_Win_Card_Panel
   m_TagString: Untagged
@@ -2657,6 +2658,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538179384}
   m_CullTransparentMesh: 1
+--- !u!114 &538179388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538179384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5104a67922b724f9a46fbad8e3bcfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rewardWinCardPanelProperties:
+    rewardWinCardPanelImage: {fileID: 1821541274}
+    rewardWinCardPanelText: {fileID: 308035251}
+    rewardWinCardPanelResultText: {fileID: 1850271915}
+    rewardWinCardPanelResultButton: {fileID: 1615215}
+    rewardWinCardPanelResultButtonWinSprite: {fileID: 21300000, guid: 56236d18c6f21ce4cacbf5b3653fde79,
+      type: 3}
+    rewardWinCardPanelResultButtonLoseSprite: {fileID: 21300000, guid: 3d5b3abb3e985df4fb6724bb0dcf30a8,
+      type: 3}
+  "congratsYouWonPlayMoreToW\u0131nMore": "Congrats! You won!\nPlay more to w\u0131n
+    more!!!"
+  "sorryYouLostTryAgainToW\u0131n": "Sorry! You lost!\nTry again to w\u0131n!!!"
+  playMore: Play More
+  tryAgain: Try Again
 --- !u!1 &605913682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2715,7 +2742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d47b7a815d2579442a7d08baa1ab159c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2961,7 +2988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3474,7 +3501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be0cce72bab3b404db8154787071ea40, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3999,7 +4026,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1068930071}
+  - {fileID: 2039207742}
+  - {fileID: 2067021791}
+  - {fileID: 1072462059}
   m_Father: {fileID: 1051737042}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4034,14 +4063,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ad775797a14b444aa1dd0b07afced32, type: 2}
   - {fileID: 11400000, guid: e76c50b6aa2f5f04fb30dfb5d744e676, type: 2}
   revolverSpinRewardPoints:
-  - {fileID: 374825786}
-  - {fileID: 2081557672}
-  - {fileID: 984547299}
-  - {fileID: 1305572468}
-  - {fileID: 125908897}
-  - {fileID: 1219432211}
-  - {fileID: 1297778908}
-  - {fileID: 26680805}
+  - {fileID: 1380799866}
+  - {fileID: 831431836}
+  - {fileID: 2082107135}
+  - {fileID: 1138980761}
+  - {fileID: 937847250}
+  - {fileID: 1370118573}
+  - {fileID: 1956365202}
+  - {fileID: 1113932202}
   revolverSpinBaseImage: {fileID: 1068930072}
   revolverSpinIndicatorImage: {fileID: 2067021792}
   revolverSpinRewardItemsSO:
@@ -4300,7 +4329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4834,15 +4863,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068930070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2012615517}
-  - {fileID: 2067021791}
-  - {fileID: 1072462059}
-  m_Father: {fileID: 954391565}
+  m_Father: {fileID: 2039207742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4914,12 +4941,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072462058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1068930071}
+  m_Father: {fileID: 954391565}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5534,7 +5561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ef4ef8f7f09aaa43a059f10425587e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -6522,7 +6549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7006,7 +7033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7285,7 +7312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8210,7 +8237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: x1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8734,6 +8761,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!1 &2039207741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039207742}
+  - component: {fileID: 2039207743}
+  m_Layer: 5
+  m_Name: RevolverParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2039207742
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039207741}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1068930071}
+  m_Father: {fileID: 954391565}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 727.5, y: 727.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2039207743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039207741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1f89ea5cd941d4db03570e4aa4d0a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  revolverWheelTransform: {fileID: 1068930071}
+  revolverSpinButton: {fileID: 1072462060}
+  maxSpeed: 10000
+  minSpeed: 1000
+  totalSpinTime: 100
+  revolverRewardPointsNumber: 8
+  rewardWinCardPanel: {fileID: 538179384}
 --- !u!1 &2041775062
 GameObject:
   m_ObjectHideFlags: 0
@@ -8894,17 +8978,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067021790}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1068930071}
+  m_Father: {fileID: 954391565}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 10}
+  m_AnchoredPosition: {x: 0, y: -9.870026}
   m_SizeDelta: {x: 123, y: 168}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2067021792
@@ -9003,7 +9087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17a9502de5043a748852583365a5bd07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8e34362005221d47913be096b1fff99, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9304,7 +9388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x100
+  m_text: Bomb
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
