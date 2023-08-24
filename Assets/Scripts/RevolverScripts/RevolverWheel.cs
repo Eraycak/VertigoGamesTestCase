@@ -1,6 +1,7 @@
 using System;
 using DG.Tweening;
 using Enums;
+using ManagerScripts;
 using ScriptableObjectScripts;
 using UnityEngine;
 using UnityEngine.UI;
