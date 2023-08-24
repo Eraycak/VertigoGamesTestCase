@@ -1,3 +1,4 @@
+using Enums;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,11 +47,26 @@ namespace ManagerScripts
             exitPanel.SetActive(true);
         }
 
-        internal void AddNewCollectedItem(string prizeValue, Sprite prizeSprite)
+        internal void AddNewCollectedItem(string prizeValue, Sprite prizeSprite, ItemTypes itemType = ItemTypes.None)
         {
+            for (int i = 0; i < contentTransform.childCount; i++)
+            {
+                if (contentTransform.GetChild(i).name.Equals(itemType.ToString()))
+                {
+                    TextMeshProUGUI tmpText = contentTransform.GetChild(i).GetChild(0).GetComponent<TextMeshProUGUI>();
+                    if (int.TryParse(tmpText.text, out int tmpInt))
+                    {
+                        tmpInt += int.Parse(prizeValue);
+                        tmpText.text = tmpInt.ToString();
+                    }
+                    return;
+                }
+            }
+            
             Transform newPrize = Instantiate(prizePrefab, contentTransform).transform;
             newPrize.GetChild(0).GetComponent<TextMeshProUGUI>().text = prizeValue;
             newPrize.GetChild(1).GetComponent<Image>().sprite = prizeSprite;
+            newPrize.name = itemType.ToString();
         }
     }
 }

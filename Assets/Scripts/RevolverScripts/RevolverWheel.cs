@@ -72,7 +72,7 @@ public class RevolverWheel : MonoBehaviour
                 {
                     rewardWinCardPanel.SetActive(true);
                     var winCondition = !rewardItemSO.itemProperties.ItemType.Equals(ItemTypes.DeathBomb);
-                    rewardWinCardPanel.GetComponent<RewardWinCardPanelManager>().SetRewardWinCardPanelProperties(rewardItemSO.itemProperties.ItemSprite, rewardItemSO.itemProperties.DefaultItemValue.ToString(), winCondition);
+                    rewardWinCardPanel.GetComponent<RewardWinCardPanelManager>().SetRewardWinCardPanelProperties(rewardItemSO.itemProperties.ItemSprite, rewardItemSO.itemProperties.DefaultItemValue.ToString(), winCondition, rewardItemSO.itemProperties.ItemType);
                 });
             }
         }

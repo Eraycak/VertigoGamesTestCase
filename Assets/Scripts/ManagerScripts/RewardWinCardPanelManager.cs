@@ -1,4 +1,5 @@
 using System;
+using Enums;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -62,7 +63,7 @@ namespace ManagerScripts
         }
 
         internal void SetRewardWinCardPanelProperties(Sprite rewardWinCardPanelSprite, string rewardWinCardPanelText,
-            bool win = true)
+            bool win = true, ItemTypes itemType = ItemTypes.None)
         {
             rewardWinCardPanelProperties.Image.sprite = rewardWinCardPanelSprite;
             rewardWinCardPanelProperties.Text.text = rewardWinCardPanelText;
@@ -74,15 +75,16 @@ namespace ManagerScripts
             rewardWinCardPanelProperties.ResultButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text =
                 win ? playMore : tryAgain;
             rewardWinCardPanelProperties.ResultButton.onClick.RemoveAllListeners();
-            rewardWinCardPanelProperties.ResultButton.onClick.AddListener(() => ClosePanel(win));
+            rewardWinCardPanelProperties.ResultButton.onClick.AddListener(() => ClosePanel(win, itemType));
         }
 
-        private void ClosePanel(bool win = true)
+        private void ClosePanel(bool win = true, ItemTypes itemType = ItemTypes.None)
         {
             if (win)
             {
                 CollectedItemsPanelManager.Instance.AddNewCollectedItem(rewardWinCardPanelProperties.Text.text,
-                    rewardWinCardPanelProperties.Image.sprite);
+                    rewardWinCardPanelProperties.Image.sprite, itemType);
+                ZonesPanelManager.Instance.MoveToNextZone();
                 gameObject.SetActive(false);
             }
             else

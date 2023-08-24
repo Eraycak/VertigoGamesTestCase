@@ -10,6 +10,7 @@ namespace Enums
 
     public enum ItemTypes
     {
+        None,
         AviatorGlassesEaster,
         ArmorPoints,
         BayonetEasterTime,

@@ -20,8 +20,29 @@ namespace ManagerScripts
 
     public class RevolverSpinPanelManager : MonoBehaviour
     {
+        private static RevolverSpinPanelManager _instance;
+
+        public static RevolverSpinPanelManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<RevolverSpinPanelManager>();
+                    if (_instance == null)
+                    {
+                        GameObject obj = new GameObject("RevolverSpinPanelManager");
+                        _instance = obj.AddComponent<RevolverSpinPanelManager>();
+                    }
+                }
+
+                return _instance;
+            }
+        }
+        
+        
         [SerializeField] private bool sortRandomly = false;
-        [SerializeField] private List<SpinSO> spinSOs;
+        [SerializeField] internal List<SpinSO> spinSOs;
         [SerializeField] internal List<SpinZoneProperties> spinZoneProperties;
         [SerializeField] private List<Transform> revolverSpinRewardPoints;
         [SerializeField] private Image revolverSpinBaseImage, revolverSpinIndicatorImage;
@@ -52,7 +73,7 @@ namespace ManagerScripts
             SetRevolverSpinProperties();
         }
 
-        private void SetRevolverSpinProperties()
+        internal void SetRevolverSpinProperties()
         {
             SetActiveSpinSO();
             SetRevolverSpinImage();
