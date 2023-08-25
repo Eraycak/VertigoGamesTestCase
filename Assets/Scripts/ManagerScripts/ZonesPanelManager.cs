@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using ScriptableObjectScripts;
@@ -31,11 +30,14 @@ namespace ManagerScripts
         }
         
         [SerializeField] private Transform zonesContentTransform;
-        [SerializeField] private Image zonesFrameImage;
         [SerializeField] private Sprite currentZoneFrameSprite, superZoneFrameSprite;
         [SerializeField] private float sizeOfCardZone = 110f;
         [SerializeField] private GameObject CardZonePrefab;
-        private float targetPositionX = 0f;
+        private float targetPositionX;
+        
+        //targetPositionX is the x position of the next zone
+        //instantiate 11 card zones at the beginning
+        //set the current zone image to the first zone
         private void Awake()
         {
             targetPositionX = zonesContentTransform.localPosition.x - sizeOfCardZone;
@@ -45,6 +47,10 @@ namespace ManagerScripts
             currentZoneImage.sprite = currentZoneFrameSprite;
         }
 
+        //moves the zones content to the next zone
+        //if the current zone is silver zone, it instantiates 6 card zones
+        //onZonePassed event is invoked to update the revolver spin panel
+        //scale up the revolver wheel
         internal void MoveToNextZone()
         {
             int currentZoneIndex = ++RevolverSpinPanelManager.Instance.CurrentZoneIndex;
@@ -77,6 +83,7 @@ namespace ManagerScripts
                 };
         }
         
+        //instantiates the card zones according to the number of card zones
         private void InstantiateCardZones(int numberOfCardZones)
         {
             for (int i = 0; i < numberOfCardZones; i++)

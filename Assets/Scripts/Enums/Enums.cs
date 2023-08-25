@@ -1,14 +1,6 @@
 namespace Enums
 {
-    public enum ButtonTypes
-    {
-        Continue,
-        Leave,
-        Return,
-        Exit
-    }
-
-    public enum ItemTypes
+    public enum ItemTypes//item type enums
     {
         None,
         AviatorGlassesEaster,
@@ -48,7 +40,7 @@ namespace Enums
         VestPoints
     }
 
-    public enum ZoneTypes
+    public enum ZoneTypes//zone type enums
     {
         BronzeRevolverSpin,
         SilverRevolverSpin,

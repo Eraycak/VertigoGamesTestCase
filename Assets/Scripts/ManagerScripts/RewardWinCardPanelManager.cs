@@ -49,18 +49,22 @@ namespace ManagerScripts
     public class RewardWinCardPanelManager : MonoBehaviour
     {
         [SerializeField] internal RewardWinCardPanelProperties rewardWinCardPanelProperties;
-
         [SerializeField]
         internal string congratsYouWonPlayMoreToWınMore = "Congrats! You won!\nPlay more to wın more!!!";
         [SerializeField] internal string sorryYouLostTryAgainToWın = "Sorry! You lost!\nTry again to wın!!!";
         [SerializeField] internal string playMore = "Play More";
         [SerializeField] internal string tryAgain = "Try Again";
 
+        //finds and assigns the result button if it is not assigned
         private void OnValidate()
         {
             rewardWinCardPanelProperties.ResultButton ??= transform.GetChild(2).GetComponent<Button>();
         }
 
+        //sets the properties of the reward win card panel
+        //sets the result button's properties according to the win or lose
+        //removes the listeners from the result button and adds them again
+        //this is done to prevent the multiple calls of the listeners
         internal void SetRewardWinCardPanelProperties(Sprite rewardWinCardPanelSprite, string rewardWinCardPanelText,
             bool win = true, ItemTypes itemType = ItemTypes.None)
         {
@@ -77,6 +81,9 @@ namespace ManagerScripts
             rewardWinCardPanelProperties.ResultButton.onClick.AddListener(() => ClosePanel(win, itemType));
         }
 
+        //closes the panel according to the win or lose
+        //if the player wins, it adds the new collected item to the content in the panel
+        //if the player loses, it loads the current scene
         private void ClosePanel(bool win = true, ItemTypes itemType = ItemTypes.None)
         {
             if (win)

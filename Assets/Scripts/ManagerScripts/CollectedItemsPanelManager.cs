@@ -31,6 +31,7 @@ namespace ManagerScripts
             }
         }
 
+        //finds and assigns the exit button if it is not assigned
         private void OnValidate()
         {
             exitButton ??= transform.GetChild(1).GetComponent<Button>();
@@ -47,7 +48,17 @@ namespace ManagerScripts
             exitPanel.SetActive(true);
         }
 
+        //adds the new collected item to the content in the panel
         internal void AddNewCollectedItem(string prizeValue, Sprite prizeSprite, ItemTypes itemType = ItemTypes.None)
+        {
+            if (SearchForAlreadyAddedItem(prizeValue, itemType)) return;
+
+            SetNewCollectedItemProperties(prizeValue, prizeSprite, itemType);
+        }
+
+        //searches for the already added item in the content
+        //if it finds, it adds the new prize value to the existing one
+        private bool SearchForAlreadyAddedItem(string prizeValue, ItemTypes itemType)
         {
             for (int i = 0; i < contentTransform.childCount; i++)
             {
@@ -59,13 +70,15 @@ namespace ManagerScripts
                         tmpInt += int.Parse(prizeValue);
                         tmpText.text = tmpInt.ToString();
                     }
-                    return;
+
+                    return true;
                 }
             }
 
-            SetNewCollectedItemProperties(prizeValue, prizeSprite, itemType);
+            return false;
         }
 
+        //sets the properties of the new collected item
         private void SetNewCollectedItemProperties(string prizeValue, Sprite prizeSprite, ItemTypes itemType)
         {
             Transform newPrize = Instantiate(prizePrefab, contentTransform).transform;
@@ -74,11 +87,13 @@ namespace ManagerScripts
             newPrize.name = itemType.ToString();
         }
 
+        //disables the exit button when the player is in the bronze zone or revolver is spinning
         internal void DisableButton()
         {
             exitButton.interactable = false;
         }
         
+        //enables the exit button when the player is in the silver or gold zone or revolver is not spinning
         internal void EnableButton()
         {
             exitButton.interactable = true;
