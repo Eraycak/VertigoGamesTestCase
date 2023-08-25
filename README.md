@@ -10,3 +10,5 @@ These are screenshots of different screen ratios of game in Unity Editor.
 ![Screenshot 2023-08-26 014854](https://github.com/Eraycak/VertigoGamesTestCase/assets/77186648/330bfd77-1558-48e3-b2d7-f7386c9823f2)
 
 This is the gameplay video of working build.
+
+https://github.com/Eraycak/VertigoGamesTestCase/assets/77186648/7a050429-d5a3-4b69-80f7-58002535c40c
