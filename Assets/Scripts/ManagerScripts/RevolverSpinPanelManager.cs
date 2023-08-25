@@ -34,7 +34,7 @@ namespace ManagerScripts
         }
         
         private bool useSpinSOsItems = false;
-        [SerializeField] private bool sortRandomly = false;
+        [SerializeField] private bool sortRandomly = true;
         [SerializeField] internal List<SpinSO> spinSOs;
         [SerializeField] private List<Transform> revolverSpinRewardPoints;
         [SerializeField] private Image revolverSpinBaseImage, revolverSpinIndicatorImage;
@@ -71,6 +71,7 @@ namespace ManagerScripts
 
         private void Awake()
         {
+            ChangeUseSpinSOsItemsValue();
             foreach (var itemSO in revolverSpinRewardItemsSO)
             {
                 ResetItemSO(itemSO);

@@ -19,7 +19,7 @@ public class RevolverRewardItem : MonoBehaviour
     //initializes the revolver reward item
     public void Initialize(ItemSO revolverRewardItemSO, int currentZoneIndex, SpinSO spinSO)
     {
-        revolverRewardItemSO.itemProperties.DefaultItemValue *= CheckSuperZone(spinSO, currentZoneIndex);
+        revolverRewardItemSO.itemProperties.DefaultItemValue = revolverRewardItemSO.itemProperties.InitialItemValue * CheckSuperZone(spinSO, currentZoneIndex);
         RevolverRewardItemSO = revolverRewardItemSO;
         ItemProperties itemProperties = RevolverRewardItemSO.itemProperties;
         revolverRewardItemImage.sprite = itemProperties.ItemSprite;
