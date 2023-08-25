@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 23550382}
   - component: {fileID: 23550381}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 183223080}
   - component: {fileID: 183223079}
   m_Layer: 5
-  m_Name: Exit_Return_Text (TMP)
+  m_Name: Exit_Return_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -777,7 +777,7 @@ GameObject:
   - component: {fileID: 252990549}
   - component: {fileID: 252990548}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 308035252}
   - component: {fileID: 308035251}
   m_Layer: 5
-  m_Name: Reward_Win_Card_Text (TMP)
+  m_Name: Reward_Win_Card_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 315841278}
   - component: {fileID: 315841277}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 442417897}
   - component: {fileID: 442417896}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1716,7 +1716,7 @@ GameObject:
   - component: {fileID: 471577013}
   - component: {fileID: 471577012}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1869,7 +1869,7 @@ GameObject:
   - component: {fileID: 508318773}
   - component: {fileID: 508318772}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2051,7 +2051,7 @@ GameObject:
   - component: {fileID: 605913685}
   - component: {fileID: 605913684}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2315,7 +2315,7 @@ GameObject:
   - component: {fileID: 663359212}
   - component: {fileID: 663359211}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2597,7 +2597,7 @@ GameObject:
   - component: {fileID: 872559047}
   - component: {fileID: 872559046}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2923,7 +2923,7 @@ GameObject:
   - component: {fileID: 978332386}
   - component: {fileID: 978332385}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3596,7 +3596,7 @@ GameObject:
   - component: {fileID: 1170915492}
   - component: {fileID: 1170915491}
   m_Layer: 5
-  m_Name: Exit_Leave_Text (TMP)
+  m_Name: Exit_Leave_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3731,7 +3731,7 @@ GameObject:
   - component: {fileID: 1204758100}
   - component: {fileID: 1204758099}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4116,7 +4116,7 @@ GameObject:
   - component: {fileID: 1366587027}
   - component: {fileID: 1366587026}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4431,7 +4431,7 @@ GameObject:
   - component: {fileID: 1451971494}
   - component: {fileID: 1451971493}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4660,7 +4660,7 @@ GameObject:
   - component: {fileID: 1581191322}
   - component: {fileID: 1581191321}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4863,7 +4863,7 @@ GameObject:
   - component: {fileID: 1650894795}
   - component: {fileID: 1650894794}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4998,7 +4998,7 @@ GameObject:
   - component: {fileID: 1782387084}
   - component: {fileID: 1782387083}
   m_Layer: 5
-  m_Name: Reward_Win_Card_Frame_Image
+  m_Name: Reward_Win_Card_Frame_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5076,7 +5076,7 @@ GameObject:
   - component: {fileID: 1789668167}
   - component: {fileID: 1789668166}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5211,7 +5211,7 @@ GameObject:
   - component: {fileID: 1821541275}
   - component: {fileID: 1821541274}
   m_Layer: 5
-  m_Name: Reward_Win_Card_Image
+  m_Name: Reward_Win_Card_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5287,7 +5287,7 @@ GameObject:
   - component: {fileID: 1850271916}
   - component: {fileID: 1850271915}
   m_Layer: 5
-  m_Name: Reward_Win_Card_Result_Text (TMP)
+  m_Name: Reward_Win_Card_Result_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5495,7 +5495,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 453071827}
   m_HandleRect: {fileID: 453071826}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5673,7 +5673,7 @@ GameObject:
   - component: {fileID: 1930609165}
   - component: {fileID: 1930609164}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5808,7 +5808,7 @@ GameObject:
   - component: {fileID: 1943539707}
   - component: {fileID: 1943539706}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6175,7 +6175,7 @@ GameObject:
   - component: {fileID: 2041775065}
   - component: {fileID: 2041775064}
   m_Layer: 5
-  m_Name: Exit_Question_Text (TMP)
+  m_Name: Exit_Question_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6386,7 +6386,7 @@ GameObject:
   - component: {fileID: 2072484361}
   - component: {fileID: 2072484360}
   m_Layer: 5
-  m_Name: Revolver_Reward_Image
+  m_Name: Revolver_Reward_Image_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6552,7 +6552,7 @@ GameObject:
   - component: {fileID: 2133873831}
   - component: {fileID: 2133873830}
   m_Layer: 5
-  m_Name: Revolver_Reward_Text (TMP)
+  m_Name: Revolver_Reward_Text (TMP)_value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

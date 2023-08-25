@@ -69,6 +69,21 @@ namespace ManagerScripts
             SetRevolverSpinProperties();
         }
 
+        private void Awake()
+        {
+            foreach (var itemSO in revolverSpinRewardItemsSO)
+            {
+                ResetItemSO(itemSO);
+            }
+        }
+
+        //resets the item value to its initial value
+        //due to resetting the item value if game is restarted or started
+        private void ResetItemSO(ItemSO revolverRewardItemSO)
+        {
+            revolverRewardItemSO.itemProperties.DefaultItemValue = revolverRewardItemSO.itemProperties.InitialItemValue;
+        }
+
         //Changes the useSpinSOsItems value according to the sortRandomly value
         private void ChangeUseSpinSOsItemsValue()
         {

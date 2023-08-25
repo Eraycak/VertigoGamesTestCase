@@ -19,7 +19,6 @@ public class RevolverRewardItem : MonoBehaviour
     //initializes the revolver reward item
     public void Initialize(ItemSO revolverRewardItemSO, int currentZoneIndex, SpinSO spinSO)
     {
-        ResetItemSO(revolverRewardItemSO, currentZoneIndex);
         revolverRewardItemSO.itemProperties.DefaultItemValue *= CheckSuperZone(spinSO, currentZoneIndex);
         RevolverRewardItemSO = revolverRewardItemSO;
         ItemProperties itemProperties = RevolverRewardItemSO.itemProperties;
@@ -35,16 +34,5 @@ public class RevolverRewardItem : MonoBehaviour
         return spinSO.spinProperties.ZoneType.Equals(ZoneTypes.GoldRevolverSpin)
             ? 10 * currentZoneIndex
             : 1 * currentZoneIndex;
-    }
-
-    //resets the item value to its initial value
-    //if the current zone index is 1
-    //due to resetting the item value if game is restarted or started
-    private void ResetItemSO(ItemSO revolverRewardItemSO, int currentZoneIndex = 1)
-    {
-        if (currentZoneIndex == 1)
-        {
-            revolverRewardItemSO.itemProperties.DefaultItemValue = revolverRewardItemSO.itemProperties.InitialItemValue;
-        }
     }
 }
