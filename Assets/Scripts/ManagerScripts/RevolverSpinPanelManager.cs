@@ -76,6 +76,7 @@ namespace ManagerScripts
             {
                 ResetItemSO(itemSO);
             }
+            SetRevolverSpinProperties();
         }
 
         //resets the item value to its initial value

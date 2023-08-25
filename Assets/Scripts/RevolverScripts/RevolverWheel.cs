@@ -66,21 +66,12 @@ public class RevolverWheel : MonoBehaviour
             {
                 ResetToDefaultValues();
                 var roundedZRotation = CalculateRoundedZRotation();
-                
-                int rewardIndex = Mathf.RoundToInt(roundedZRotation / angleForEachRewardPoint) %
-                                  revolverRewardPointsNumber;
-                ItemSO rewardItemSO = revolverWheelTransform.GetChild(0).GetChild(rewardIndex).GetChild(0)
-                    .GetComponent<RevolverRewardItem>().RevolverRewardItemSO;
-                
-                //var rewardItemSO = GetRewardItemSo(roundedZRotation);
-                Debug.Log(rewardItemSO + "reward item so" + " before dorotate " + rewardItemSO.name);
+                var rewardItemSO = GetRewardItemSo(roundedZRotation);
                 revolverWheelTransform.DORotate(new Vector3(0f, 0f, roundedZRotation), 0.5f).OnComplete(() =>
                 {
                     RevolverSpinPanelManager.Instance.ScaleDown();//scales down the revolver spin panel
                     rewardWinCardPanel.SetActive(true);
                     //win condition is true if the reward item is not death bomb
-                    Debug.Log(rewardItemSO + "reward item so" + " after dorotate" + rewardItemSO.name + "  itemtype " +
-                              rewardItemSO.itemProperties.ItemType);
                     var winCondition = !rewardItemSO.itemProperties.ItemType.Equals(ItemTypes.DeathBomb);
                     rewardWinCardPanel.GetComponent<RewardWinCardPanelManager>().
                         SetRewardWinCardPanelProperties(rewardItemSO.itemProperties.ItemSprite, 
