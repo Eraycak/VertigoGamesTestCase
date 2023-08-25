@@ -10,6 +10,7 @@ namespace ScriptableObjectScripts
         [SerializeField] private ItemTypes itemType;
         [SerializeField] private Sprite itemSprite;
         [SerializeField] private int defaultItemValue;
+        [SerializeField] private int initialItemValue;
         
         public ItemTypes ItemType => itemType;
         public Sprite ItemSprite => itemSprite;
@@ -18,6 +19,11 @@ namespace ScriptableObjectScripts
             get => defaultItemValue == 0 ? 1 : defaultItemValue;
 
             set => defaultItemValue = value;
+        }
+
+        public int InitialItemValue
+        {
+            get => initialItemValue == 0 ? 1 : initialItemValue;
         }
     }
 

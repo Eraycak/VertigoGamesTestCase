@@ -16,12 +16,29 @@ public class RevolverRewardItem : MonoBehaviour
         set => _revolverRewardItemSO = value;
     }
 
-    public void Initialize(ItemSO revolverRewardItemSO, int currentZoneIndex)
+    public void Initialize(ItemSO revolverRewardItemSO, int currentZoneIndex, SpinSO spinSO)
     {
-        revolverRewardItemSO.itemProperties.DefaultItemValue *= currentZoneIndex;
+        ResetItemSO(revolverRewardItemSO, currentZoneIndex);
+        revolverRewardItemSO.itemProperties.DefaultItemValue *= CheckSuperZone(spinSO, currentZoneIndex);
         RevolverRewardItemSO = revolverRewardItemSO;
         ItemProperties itemProperties = RevolverRewardItemSO.itemProperties;
         revolverRewardItemImage.sprite = itemProperties.ItemSprite;
         revolverRewardItemText.text = itemProperties.ItemType.Equals(ItemTypes.DeathBomb) ? "Bomb" : "x" + itemProperties.DefaultItemValue;
+    }
+
+    private int CheckSuperZone(SpinSO spinSO, int currentZoneIndex = 1)
+    {
+        Debug.Log(spinSO.spinProperties.ZoneType + "  " + spinSO.spinProperties.ZoneType.Equals(ZoneTypes.GoldRevolverSpin));
+        return spinSO.spinProperties.ZoneType.Equals(ZoneTypes.GoldRevolverSpin)
+            ? 10 * currentZoneIndex
+            : 1 * currentZoneIndex;
+    }
+
+    private void ResetItemSO(ItemSO revolverRewardItemSO, int currentZoneIndex = 1)
+    {
+        if (currentZoneIndex == 1)
+        {
+            revolverRewardItemSO.itemProperties.DefaultItemValue = revolverRewardItemSO.itemProperties.InitialItemValue;
+        }
     }
 }

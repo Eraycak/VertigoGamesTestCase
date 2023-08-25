@@ -73,5 +73,15 @@ namespace ManagerScripts
             newPrize.GetChild(1).GetComponent<Image>().sprite = prizeSprite;
             newPrize.name = itemType.ToString();
         }
+
+        internal void DisableButton()
+        {
+            exitButton.interactable = false;
+        }
+        
+        internal void EnableButton()
+        {
+            exitButton.interactable = true;
+        }
     }
 }

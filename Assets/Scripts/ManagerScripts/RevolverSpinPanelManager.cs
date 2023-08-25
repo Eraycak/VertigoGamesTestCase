@@ -80,6 +80,20 @@ namespace ManagerScripts
             SetActiveSpinSO();
             SetRevolverSpinImage();
             InitializeRevolverSpinnerItems();
+            ChangeExitButtonInteractability();
+        }
+
+        private void ChangeExitButtonInteractability()
+        {
+            CollectedItemsPanelManager collectedItemsPanelManager = CollectedItemsPanelManager.Instance;
+            if (_spinSO.spinProperties.ZoneType.Equals(ZoneTypes.BronzeRevolverSpin))
+            {
+                collectedItemsPanelManager.DisableButton();
+            }
+            else
+            {
+                collectedItemsPanelManager.EnableButton();
+            }
         }
 
         private void SetActiveSpinSO()
@@ -119,7 +133,7 @@ namespace ManagerScripts
                     sortRandomly
                         ? shuffledIndices[i]
                         : i;
-                revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[itemIndex], currentZoneIndex);
+                revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[itemIndex], currentZoneIndex, _spinSO);
                 if (revolverSpinRewardItemsSO[itemIndex].itemProperties.ItemType.Equals(ItemTypes.DeathBomb))
                 {
                     isDeathBombAdded = true;
@@ -138,7 +152,7 @@ namespace ManagerScripts
                 if (isDeathBombAdded)
                 {
                     bombRevolverSpinRewardItem.Initialize(
-                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]], currentZoneIndex);
+                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]], currentZoneIndex, _spinSO);
                     return false;
                 }
             }
@@ -148,7 +162,7 @@ namespace ManagerScripts
                 {
                     int randomIndex = Random.Range(0, revolverSpinRewardPoints.Count);
                     var revolverSpinRewardItem = revolverSpinRewardPoints[randomIndex].GetComponent<RevolverRewardItem>();
-                    revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0], currentZoneIndex);
+                    revolverSpinRewardItem.Initialize(revolverSpinRewardItemsSO[0], currentZoneIndex, _spinSO);
                     return true;
                 }
             }
