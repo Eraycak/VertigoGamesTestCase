@@ -67,7 +67,7 @@ public class RevolverWheel : MonoBehaviour
                 ResetToDefaultValues();
                 var roundedZRotation = CalculateRoundedZRotation();
                 var rewardItemSO = GetRewardItemSo(roundedZRotation);
-                revolverWheelTransform.DORotate(new Vector3(0f, 0f, roundedZRotation), 0.5f).OnComplete(() =>
+                revolverWheelTransform.DORotate(new Vector3(0f, 0f, roundedZRotation), 0.1f).OnComplete(() =>
                 {
                     RevolverSpinPanelManager.Instance.ScaleDown();//scales down the revolver spin panel
                     rewardWinCardPanel.SetActive(true);

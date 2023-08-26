@@ -208,7 +208,7 @@ namespace ManagerScripts
                 if (isDeathBombAdded)
                 {
                     bombRevolverSpinRewardItem.Initialize(
-                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count + 1]], currentZoneIndex, _spinSO);
+                        revolverSpinRewardItemsSO[shuffledIndices[revolverSpinRewardItemsSO.Count - 1]], currentZoneIndex, _spinSO);
                 }
             }
             else
